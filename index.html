@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roshin Kurian</title>
+<meta name="description" content="Roshin Kurian: Technical Data Analyst in product data, PIM, taxonomy and regulatory data for the chemical industry.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE everyday-professional: a calm, confident personal site for a chemical engineer turned product-data analyst
+   IDEA a periodic table: Roshin is the large element, her skills are the elements around her, coloured by group
+   PICTURE a periodic-table grid of her skills with her own big "Rk" tile, plus a strip of key figures
+   COLOUR white ground, ink #10142a, cobalt #2340c8 dominant field, coral #ff6a4d accent, group tints for tiles
+   TYPE Archivo 800 display + Inter text
+   LAYOUT laptop: name and headline across the top, table full width beneath, figures under; phone: stacked, table reflows */
+:root{color-scheme:light dark;
+--bg:light-dark(#ffffff,#0d1024);
+--ink:light-dark(#10142a,#eef0fb);
+--soft:light-dark(#4a5072,#b3b8d6);
+--line:light-dark(#e1e4ef,#262b4a);
+--card:light-dark(#f5f6fb,#151a35);
+--cobalt:light-dark(#2340c8,#3b57e6);
+--onc:#ffffff;
+--coral:light-dark(#e0472b,#ff7a5e);
+--g-data:light-dark(#d6e2ff,#1f3170);
+--g-prod:light-dark(#ffdcd2,#6a2a1f);
+--g-reg:light-dark(#fff0b8,#5c4c12);
+--g-eng:light-dark(#d2f1e0,#164a33);
+--g-soft:light-dark(#eceaf6,#2c2a48)}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:72px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
+a{color:inherit}
+h1,h2,h3{font-family:Archivo,Inter,sans-serif;letter-spacing:-.02em;line-height:1.05;margin:0;text-wrap:balance}
+h2{font-size:clamp(28px,3.4vw,40px);font-weight:800}
+h3{font-size:19px;font-weight:700;line-height:1.25}
+p{margin:0 0 12px}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding-block:clamp(36px,5vw,72px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:6px 22px;padding:12px max(5vw,16px)}
+.brand{font:800 18px Archivo,sans-serif;text-decoration:none;margin-right:auto;display:flex;align-items:center;gap:10px}
+.brand i{font-style:normal;display:grid;place-items:center;width:32px;height:32px;border-radius:6px;background:var(--cobalt);color:var(--onc);font-size:15px}
+nav a.l{text-decoration:none;color:var(--soft);font-weight:500;padding:8px 0}
+nav a.l:hover{color:var(--ink)}
+.hero{padding-bottom:28px}
+.top{display:grid;grid-template-columns:210px minmax(0,1.3fr) minmax(0,1fr);gap:24px 40px;align-items:end;margin-bottom:28px}
+.photo{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:50% 50%;border-radius:12px;display:block;box-shadow:0 0 0 6px var(--g-data)}
+.hero h1{font-size:clamp(44px,7vw,80px);font-weight:800}
+.role{font:700 clamp(18px,2vw,22px)/1.3 Archivo,sans-serif;color:var(--cobalt);margin-top:14px}
+.intro{color:var(--soft);font-size:17px;max-width:62ch}
+.open{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;margin-bottom:14px}
+.open::before{content:"";width:10px;height:10px;border-radius:50%;background:#1fa463;box-shadow:0 0 0 4px color-mix(in srgb,#1fa463 25%,transparent)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:8px;font-weight:600;text-decoration:none;border:1.5px solid var(--cobalt);color:var(--cobalt);background:transparent;font-size:15px;cursor:pointer;font-family:inherit}
+.btn.p{background:var(--cobalt);color:var(--onc)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.table{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:6px}
+.el{position:relative;aspect-ratio:1/1.05;border-radius:6px;padding:8px 9px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid color-mix(in srgb,var(--ink) 10%,transparent)}
+.el .n{font-size:11px;font-weight:600;color:var(--soft);font-variant-numeric:tabular-nums}
+.el .s{font:800 26px/1 Archivo,sans-serif}
+.el .t{font-size:11.5px;line-height:1.25;font-weight:500}
+.el.data{background:var(--g-data)}.el.prod{background:var(--g-prod)}.el.reg{background:var(--g-reg)}.el.eng{background:var(--g-eng)}.el.soft{background:var(--g-soft)}
+.el.me{grid-column:span 2;grid-row:span 2;aspect-ratio:auto;background:var(--cobalt);color:var(--onc);padding:14px 16px;border:0}
+.el.me .n{color:color-mix(in srgb,var(--onc) 80%,transparent);font-size:13px;display:flex;justify-content:space-between}
+.el.me .s{font-size:clamp(64px,8vw,96px)}
+.el.me .t{font-size:15px;font-weight:600}
+.el.me .t small{display:block;font-weight:400;opacity:.85;font-size:13px}
+.key{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:13.5px;color:var(--soft)}
+.key span{display:inline-flex;align-items:center;gap:7px}
+.key b{width:14px;height:14px;border-radius:3px;display:inline-block}
+.figs{background:var(--cobalt);color:var(--onc)}
+.figs .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:22px}
+.fig b{display:block;font:800 clamp(38px,5vw,56px)/1 Archivo,sans-serif;white-space:nowrap}
+.fig span{display:block;margin-top:8px;font-size:15px;opacity:.9;max-width:24ch}
+.sec-h{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:20px 48px;align-items:start}
+.sec-h>div:first-child p{color:var(--soft);margin-top:12px}
+.jobs{list-style:none;margin:0;padding:0}
+.job{display:grid;grid-template-columns:150px minmax(0,1fr);gap:4px 24px;padding:22px 0;border-top:1px solid var(--line)}
+.job:first-child{border-top:0;padding-top:0}
+.when{font-weight:600;color:var(--cobalt);font-size:14.5px;white-space:nowrap;padding-top:2px}
+.where{color:var(--soft);font-size:15px;margin:4px 0 10px}
+.job ul{margin:0;padding-left:18px}
+.job li{margin-bottom:6px}
+.tag{display:inline-block;margin-left:8px;font:600 12px Inter,sans-serif;color:var(--coral);vertical-align:middle;letter-spacing:0}
+.alt{background:var(--card)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px}
+.sk{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:18px 18px 14px}
+.sk h3{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.sk h3 b{width:14px;height:14px;border-radius:3px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:14px;padding:4px 10px;border-radius:999px;background:var(--card);border:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
+.card{border:1px solid var(--line);border-radius:10px;padding:22px;background:var(--bg)}
+.card .meta{color:var(--coral);font-weight:600;font-size:14px;margin:8px 0 10px}
+.card p{color:var(--soft);margin:0}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px;margin-top:16px}
+.contact{background:var(--cobalt);color:var(--onc)}
+.contact h2{font-size:clamp(32px,4.4vw,52px)}
+.contact p{opacity:.92;max-width:56ch;margin-top:14px}
+.clist{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:14px;margin-top:26px}
+.ci{background:color-mix(in srgb,var(--onc) 12%,transparent);border-radius:10px;padding:16px 18px}
+.ci small{display:block;opacity:.8;font-size:13px;margin-bottom:4px}
+.ci a,.ci span{font-weight:600;overflow-wrap:anywhere}
+.ci .btn{margin-top:10px;margin-right:6px;border-color:var(--onc);color:var(--onc);min-height:40px;font-size:14px}
+.copied{font-size:13px;margin-left:8px;opacity:.9}
+footer{padding:22px max(5vw,16px);color:var(--soft);font-size:14px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+@media(max-width:900px){.top{grid-template-columns:160px minmax(0,1fr)}.top>div:last-child{grid-column:1/-1}.sec-h{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.top{grid-template-columns:minmax(0,1fr)}.photo{width:150px}nav a.l{font-size:14px}.job{grid-template-columns:minmax(0,1fr)}.table{grid-template-columns:repeat(auto-fill,minmax(74px,1fr))}.el .s{font-size:21px}.el .t{font-size:10.5px}.el.me .s{font-size:58px}}
+@media(prefers-reduced-motion:no-preference){.el{transition:transform .2s ease}.el:hover{transform:translateY(-3px)}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><i>Rk</i>Roshin Kurian</a>
+    <a class="l" href="#experience">Experience</a>
+    <a class="l" href="#skills">Skills</a>
+    <a class="l" href="#projects">Projects</a>
+    <a class="l" href="#contact">Contact</a>
+    <a class="l" href="Roshin_Kurian_Resume.pdf" target="_blank" rel="noopener">CV</a>
+  </div>
+</nav>
+
+<header class="band hero" id="top">
+  <div class="wrap">
+    <div class="top">
+      <img class="photo" src="photo.jpg" alt="Photo of Roshin Kurian" width="600" height="600">
+      <div>
+        <div class="open">Open to new roles</div>
+        <h1>Roshin Kurian</h1>
+        <div class="role">Technical Data Analyst · Product Data &amp; PIM · Regulatory Data (Chemicals)</div>
+      </div>
+      <div>
+        <p class="intro">Chemical Engineering graduate with 3 years at Knowde, a chemical marketplace, keeping product data accurate, well classified and compliant. I bring chemistry knowledge and careful data work together.</p>
+        <div class="btns">
+          <a class="btn p" href="Roshin_Kurian_Resume.pdf" target="_blank" rel="noopener">View CV</a>
+          <a class="btn" href="Roshin_Kurian_Resume.pdf" download="Roshin_Kurian_Resume.pdf">Download CV (PDF)</a>
+          <a class="btn" href="https://www.linkedin.com/in/roshinkurian" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="table" id="ptable" aria-label="Periodic table of Roshin's skills"></div>
+    <div class="key" aria-hidden="true">
+      <span><b style="background:var(--g-data)"></b>Data and tools</span>
+      <span><b style="background:var(--g-prod)"></b>Product data</span>
+      <span><b style="background:var(--g-reg)"></b>Regulatory</span>
+      <span><b style="background:var(--g-eng)"></b>Chemical engineering</span>
+      <span><b style="background:var(--g-soft)"></b>Languages</span>
+    </div>
+  </div>
+</header>
+
+<section class="band figs" aria-label="Key figures">
+  <div class="wrap">
+    <div class="fig"><b>3 years</b><span>at Knowde, promoted within a year</span></div>
+    <div class="fig"><b>500+</b><span>chemical products classified every month</span></div>
+    <div class="fig"><b>~98%</b><span>product data accuracy across catalogs</span></div>
+    <div class="fig"><b>200+</b><span>Safety Data Sheets processed and validated</span></div>
+  </div>
+</section>
+
+<section class="band" id="experience">
+  <div class="wrap sec-h">
+    <div>
+      <h2>Experience</h2>
+      <p>From catalog work to technical data analysis at Knowde, a B2B marketplace for chemicals and ingredients.</p>
+    </div>
+    <ol class="jobs" id="jobs"></ol>
+  </div>
+</section>
+
+<section class="band alt" id="skills">
+  <div class="wrap">
+    <div class="sec-h" style="margin-bottom:26px">
+      <div><h2>Skills</h2></div>
+      <p style="color:var(--soft);margin:0;max-width:60ch">Tools I use every day, the product-data practices I work in, and the engineering background that helps me read a technical data sheet properly.</p>
+    </div>
+    <div class="skills" id="skillgroups"></div>
+  </div>
+</section>
+
+<section class="band" id="projects">
+  <div class="wrap">
+    <div class="sec-h" style="margin-bottom:26px">
+      <div><h2>Projects and education</h2></div>
+      <p style="color:var(--soft);margin:0;max-width:60ch">Engineering projects from my B.Tech, one of them funded by the university's innovation scheme.</p>
+    </div>
+    <div class="cards" id="projcards"></div>
+    <div class="two">
+      <div class="card">
+        <h3>B.Tech, Chemical Engineering</h3>
+        <div class="meta">Minor in Food Technology · 2019 – 2023</div>
+        <p>Saintgits College of Engineering, Kottayam</p>
+      </div>
+      <div class="card">
+        <h3>Activities and leadership</h3>
+        <div class="meta">College events</div>
+        <p>Documentation Head and Core Committee Member, SRISHTI 2023 (national technical project exhibition). Valedictory Committee Sub-Head, NAKSHATRA 2022 (national techno-cultural fest). Compering team for college technical and cultural events.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band contact" id="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>I'm looking for roles in product data, PIM, catalog and taxonomy work, master data management and regulatory data. I'd be glad to hear about opportunities.</p>
+    <div class="clist">
+      <div class="ci"><small>Email</small><span id="mail">roshin.sky.girlup@gmail.com</span><br><button class="btn" id="copy" type="button">Copy email</button><span class="copied" id="copied" aria-live="polite"></span></div>
+      <div class="ci"><small>LinkedIn</small><a href="https://www.linkedin.com/in/roshinkurian" target="_blank" rel="noopener">linkedin.com/in/roshinkurian</a></div>
+      <div class="ci"><small>Based in</small><span>Kottayam, Kerala, India</span></div>
+      <div class="ci"><small>CV</small><span>2-page PDF</span><br><a class="btn" href="Roshin_Kurian_Resume.pdf" target="_blank" rel="noopener">View</a> <a class="btn" href="Roshin_Kurian_Resume.pdf" download="Roshin_Kurian_Resume.pdf">Download</a></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© 2026 Roshin Kurian</span><span>English · Malayalam</span></div></footer>
+
+<script>
+{
+const els=[
+ ["Xl","Microsoft Excel","data"],["Gs","Google Sheets","data"],["Pv","Pivot tables","data"],["Lk","XLOOKUP / VLOOKUP","data"],["Sq","SQL (basic)","data"],["Bi","Power BI (basic)","data"],
+ ["Pim","Product information mgmt","prod"],["Md","Master data mgmt","prod"],["Tx","Taxonomy","prod"],["Cl","Classification","prod"],["Ca","Catalog upkeep","prod"],["Dq","Data quality","prod"],["Se","SEO for listings","prod"],
+ ["Sds","Safety Data Sheets","reg"],["Rc","Regulatory compliance","reg"],["Fs","Food safety","reg"],
+ ["Ps","Process safety","eng"],["Ht","Heat transfer","eng"],["Sim","Process simulation","eng"],["Pe","Process equipment","eng"],
+ ["En","English","soft"],["Ml","Malayalam","soft"]];
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const me='<div class="el me"><div class="n"><span>Est. 2023</span><span>3 yrs</span></div><div class="s">Rk</div><div class="t">Roshin Kurian<small>Technical Data Analyst</small></div></div>';
+document.getElementById("ptable").innerHTML=me+els.map((e,i)=>'<div class="el '+e[2]+'" title="'+esc(e[1])+'"><div class="n">'+(i+1)+'</div><div class="s">'+esc(e[0])+'</div><div class="t">'+esc(e[1])+'</div></div>').join("");
+
+const jobs=[
+ {t:"Technical Data Analyst (Chemical Products)",w:"Knowde, Bengaluru",d:"Jan 2025 – Sep 2026",tag:"Promoted",b:[
+  "Classified 500+ chemical products per month into the platform taxonomy using Knowledge Engine, Knowde's internal PIM platform.",
+  "Kept product data at ~98% accuracy across catalogs for suppliers including Nordmann, Palmer Holland and IMPAG.",
+  "Processed and validated 200+ Safety Data Sheets and regulatory documents for compliance.",
+  "Cleaned and analysed product data in Microsoft Excel and Google Sheets with pivot tables, XLOOKUP/VLOOKUP and data validation.",
+  "Worked across the Catalog, Classification and Regulatory workstreams with cross-functional teams."]},
+ {t:"Catalog Associate",w:"Knowde, Bengaluru",d:"Nov 2023 – Dec 2024",b:[
+  "Maintained 3 major chemical supplier catalogs daily, updating listings, attributes and specifications.",
+  "Managed taxonomy and attribute mapping, and fixed duplicate or missing records to improve data quality and SEO."]},
+ {t:"Internship Trainee",w:"The Travancore Cochin Chemicals Ltd, Ernakulam",d:"Dec 2021",b:[
+  "Compared defect-rate data with machine settings and conditions to find ways to cut cycle time, improve quality and reduce waste."]}];
+document.getElementById("jobs").innerHTML=jobs.map(j=>'<li class="job"><div class="when">'+esc(j.d)+'</div><div><h3>'+esc(j.t)+(j.tag?'<span class="tag">'+esc(j.tag)+'</span>':'')+'</h3><div class="where">'+esc(j.w)+'</div><ul>'+j.b.map(x=>'<li>'+esc(x)+'</li>').join("")+'</ul></div></li>').join("");
+
+const groups=[
+ ["Data and tools","data",["Microsoft Excel","Pivot tables","XLOOKUP / VLOOKUP","Data validation","Google Sheets","SQL (basic)","Power BI (basic)","Microsoft Office","Knowledge Engine (PIM)"]],
+ ["Product data","prod",["Product information management (PIM)","Master data management (MDM)","Product classification","Taxonomy management","Catalog maintenance","Data quality","Data cleaning","Data analysis","SEO"]],
+ ["Regulatory and engineering","reg",["Safety Data Sheets (SDS)","Regulatory compliance","Food safety","Process equipment","Heat transfer","Process simulation","Process safety"]],
+ ["Ways of working","soft",["Attention to detail","Problem solving","Communication","Teamwork","Time management","English","Malayalam"]]];
+document.getElementById("skillgroups").innerHTML=groups.map(g=>'<div class="sk"><h3><b style="background:var(--g-'+g[1]+')"></b>'+esc(g[0])+'</h3><div class="chips">'+g[2].map(c=>'<span class="chip">'+esc(c)+'</span>').join("")+'</div></div>').join("");
+
+const projs=[
+ ["Treating cement-industry wastewater with electrochemical methods","Final year project · 2022 – 2023","Measured how well pollutants were removed and whether the treated water could be reused. Funded by APJ Abdul Kalam Technological University under the CERD Innovation Scheme."],
+ ["Flavour-enhanced spread from soybeans (Glycine max)","Food Technology project","Developed a nutritious spread from soybean sprouts and ran analytical and sensory evaluation tests on it."]];
+document.getElementById("projcards").innerHTML=projs.map(p=>'<div class="card"><h3>'+esc(p[0])+'</h3><div class="meta">'+esc(p[1])+'</div><p>'+esc(p[2])+'</p></div>').join("");
+
+const cb=document.getElementById("copy"),msg=document.getElementById("copied");
+cb.addEventListener("click",()=>{
+  const v=document.getElementById("mail").textContent;
+  try{navigator.clipboard.writeText(v).then(()=>{msg.textContent="Copied"},()=>{msg.textContent="Select the address to copy it"})}
+  catch(e){msg.textContent="Select the address to copy it"}
+});
+}
+</script>
+</body>
+</html>
